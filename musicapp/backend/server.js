@@ -24,8 +24,8 @@ app.use(express.json()); // for chatbot
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "cWmp5ZBp",
-  database: "music"
+  password: "",
+  database: ""
 });
 
 db.connect((err) => {
