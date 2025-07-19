@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html, .app-container {
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+/* Left Panel */
+.left-panel {
+  flex: 1;
+  background: #121212;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.left-panel h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.left-panel p {
+  font-size: 1.2rem;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Right Panel (Form) */
+.right-panel {
+  flex: 1;
+  background: #ffffff;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-panel h2 {
+  margin-bottom: 1rem;
+  color: #121212;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1ed760;
+}
+
+.link {
+  color: #1db954;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .app-container {
+    flex-direction: column-reverse;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+    flex: none;
+    padding: 2rem;
+  }
+}

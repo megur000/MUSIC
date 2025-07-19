@@ -1,0 +1,66 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 100vh;
+  gap: 20px;
+  padding: 20px;
+  background: #121212;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
+}
+
+.quadrant {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 0 10px #00000050;
+  display: flex;
+  flex-direction: column;
+}
+
+.quadrant h3 {
+  color: #1DB954;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.placeholder {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  border: 2px dashed #333;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.recommendations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.recommend-card {
+  display: flex;
+  align-items: flex-start;
+  background: #242f48;
+  padding: 16px 16px;
+  border-radius: 12px;
+  transition: transform 0.2s;
+  flex-direction: row;
+  box-shadow: 0 0 8px #00000020;
+}
+
+.recommend-card:hover {
+  transform: scale(1.01);
+  background: #2a2a2a;
+}
